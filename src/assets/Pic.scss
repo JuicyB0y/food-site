@@ -1,0 +1,37 @@
+.pic {
+   padding: 0px 30px;
+   &__photo {
+      width: 1380px;
+      height: 720px;
+      object-fit: cover;   /* это прописываю чтобы запомнить это свойство (полезное на мой взгляд) */
+      width: 100%;
+      height: 100%;
+   }
+   &__text {
+      margin: 115px auto 0;
+      width: 685px;
+      font-weight: 100;
+      font-size: 24px;
+      line-height: 36px;
+      text-align: center;
+      color: #999999;
+   }
+   &__subtitle {
+      font-weight: 700;
+      color: #000000;
+   }
+   &__about {
+      font-weight: 400;
+      font-size: 11px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #5AB963;
+   }
+}
+.divider {
+   display: block;
+   width: 1050px;
+   height: 2px;
+   background: rgb(220, 220, 220);
+   margin: 100px auto 0;
+}

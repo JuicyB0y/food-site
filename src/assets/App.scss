@@ -1,0 +1,105 @@
+@import '../libs/bootstrap-reboot.min.css';
+
+* {
+  font-family: 'Libre Franklin', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+// font-family: 'IBM Plex Mono', monospace;
+
+.conatainer {
+  width: 1440px;
+  margin: 0 auto;
+}
+nav {
+  margin-top: 22px;
+}
+
+.promo {
+  background: url('../resources/main.jpg') no-repeat 50%/cover;
+  height: 582px;
+  padding-top: 22px;
+
+  &__nav {
+    position: relative;
+     margin-top: 22px;
+     margin-right: 100px;
+     display: flex;
+     align-items: center;
+     justify-content: flex-end;
+     list-style-type: none;
+     &-img {
+       margin-right: 420px;
+     }
+     &-item {
+        font-weight: 400;
+        font-size: 14px;
+        color: #FFFFFF;
+        margin-right: 40px;
+     }
+     &-link {
+      text-decoration: none;
+      color: white;
+      &:hover {
+        color: rgb(198, 197, 122);
+        text-decoration: none;
+      }
+    }
+     &-point {
+       margin-left: 34px;
+       &:before {
+        content: '';
+/*         position: absolute; какое тут позиционирование поставить: relative не отображает эту точку вообще*/
+        width: 4px;
+        height: 4px;
+        left: 1521px;
+        top: 11px;
+        background: #FFFFFF;
+      }
+     }
+     &-started {
+       padding: 11px 17px;
+       border: 2px solid #FFFFFF;
+       border-radius: 4px;
+       &:hover {
+         background: rgba(198, 197, 122, 0.5);
+         border: 2px solid rgb(196, 170, 120);
+         color: white;
+       }
+     }
+  }
+  &__title {
+    display: block;
+    margin-top: 137px;
+    font-weight: 700;
+    font-size: 71px;
+    color: #FFFFFF;
+    text-align: center;
+  }
+  &__subtitle {
+    margin-top: 35px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 13px;
+    color: #FFFFFF;
+    font-family: 'IBM Plex Mono';
+  }
+  &__btn {
+    display: block;
+    margin: 60px auto 0;
+    justify-content: center;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 15px 30px;
+    box-sizing: border-box;
+    background: #5AB963;
+    border: none;
+    border-radius: 4px;
+    &:hover {
+      background: #FFFFFF;
+      color: #5AB963;
+    }
+  }
+}

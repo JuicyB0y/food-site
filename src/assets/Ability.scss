@@ -1,0 +1,40 @@
+.ability {
+   padding:120px 135px;
+   &__title {
+      text-align: center;
+      margin: 0 auto;
+      width: 507px;
+      font-weight: 100;
+      font-size: 24px;
+      line-height: 36px;
+      color: #999999;
+   }
+   &__span {
+      font-weight: 700;
+      color: #000000;
+   }
+   &__cards {
+      margin-top: 54px;
+      display: grid;
+      grid-template: 330px / repeat(3, 377px);
+      column-gap: 20px;
+      justify-content: center;
+   }
+   &__item {
+      padding: 51px 64px 109px 41px;
+      box-sizing: border-box;
+      border: 1px solid #bebebe48;
+   }
+   &__subtitle {
+      margin-top: 25px;
+      font-weight: 700;
+      font-size: 16px;
+   }
+   &__text {
+      margin-top:13px;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 24px;
+      color: #999999;;
+   }
+}
