@@ -1,0 +1,22 @@
+@import './_ability.scss';
+@import './_app.scss';
+@import './_footer.scss';
+@import './_info.scss';
+@import './menu';
+@import './pic';
+@import './core';
+@import './sizeAdaptation';
+
+@import '../libs/bootstrap-reboot.min.css';
+
+* {
+  font-family: 'Libre Franklin', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+// font-family: 'IBM Plex Mono', monospace;
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}

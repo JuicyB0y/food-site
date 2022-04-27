@@ -1,29 +1,17 @@
-@import '../libs/bootstrap-reboot.min.css';
-
-* {
-  font-family: 'Libre Franklin', sans-serif;
-  margin: 0;
-  padding: 0;
+.hamburger {
+  display: none;
 }
-// font-family: 'IBM Plex Mono', monospace;
-
-.conatainer {
-  width: 1440px;
-  margin: 0 auto;
-}
-nav {
-  margin-top: 22px;
-}
-
 .promo {
   background: url('../resources/main.jpg') no-repeat 50%/cover;
   height: 582px;
   padding-top: 22px;
 
   &__nav {
-    position: relative;
-     margin-top: 22px;
-     margin-right: 100px;
+    width: 100%;
+     background:rgba(0, 0, 0, 0.6);
+     position: sticky;
+     top: 0px;
+     padding: 22px 135px 22px 0;
      display: flex;
      align-items: center;
      justify-content: flex-end;
@@ -45,6 +33,10 @@ nav {
         text-decoration: none;
       }
     }
+    &-active {
+      background:rgba(0, 0, 0, 0.6);
+      color: #FFFFFF;
+    }
      &-point {
        margin-left: 34px;
        &:before {
@@ -58,6 +50,7 @@ nav {
       }
      }
      &-started {
+       box-sizing: border-box;
        padding: 11px 17px;
        border: 2px solid #FFFFFF;
        border-radius: 4px;
